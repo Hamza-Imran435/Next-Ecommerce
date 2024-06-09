@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Responsive positioning */
+@media screen and (max-width: 768px) {
+    /* Adjust positioning for smaller screens */
+    .change_position img {
+     position: relative !important;
+    }
+  }
