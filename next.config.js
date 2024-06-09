@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output : 'export',
+  output: 'export',
   experimental: {
     typedRoutes: true,
     instrumentationHook: true,
   },
   images: {
-    remotePatterns: [
-      {
+    unoptimized: true,
+    remotePatterns: [{
         protocol: "https",
         hostname: "images.pexels.com",
         port: "",

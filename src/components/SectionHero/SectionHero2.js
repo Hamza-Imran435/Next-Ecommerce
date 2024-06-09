@@ -17,29 +17,29 @@ const SectionHero2 = ({ className = "" }) => {
   const [indexActive, setIndexActive] = useState(0);
   const [isRunning, toggleIsRunning] = useBoolean(true);
 
-  useEffect(() => {
-    getProduct()
-  }, [])
+  // useEffect(() => {
+  //   getProduct()
+  // }, [])
   
 
-  const getProduct = () => {
-    fetch('http://localhost:3000/api/hello', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-         name: 'String',
-  color: 'String',
-  weight: 'String',
-  category: 'String',
-  img: 'String',
-      })
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error))
-  };
+  // const getProduct = () => {
+  //   fetch('http://localhost:3000/api/hello', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //        name: 'String',
+  // color: 'String',
+  // weight: 'String',
+  // category: 'String',
+  // img: 'String',
+  //     })
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(error => console.error('Error:', error))
+  // };
 
   useInterval(
     () => {
